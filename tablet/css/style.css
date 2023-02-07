@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  width: 1440px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 81;
+}
+header img {
+  width: 48px;
+  height: 48px;
+  margin-left: 55px;
+}
+header .line {
+  width: 473px;
+  height: 1px;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  position: relative;
+  left: 60px;
+  z-index: 1;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 830px;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(40.7742px);
+          backdrop-filter: blur(40.7742px);
+  padding: 0 123px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+  height: 93px;
+  list-style: none;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header ul li:hover {
+  border-bottom: 3px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.home {
+  position: absolute;
+  width: 1440px;
+  height: 680px;
+  background-image: url(../img/Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  display: none;
+}
+.home .under {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home .under .text {
+  position: relative;
+  left: 140px;
+  top: 210px;
+}
+.home .under .text .so {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  color: #D0D6F9;
+  margin-bottom: 24px;
+}
+.home .under .text .space {
+  margin-bottom: 24px;
+  margin-top: 0;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  color: #FFFFFF;
+}
+.home .under .text .let {
+  margin-top: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #D0D6F9;
+  width: 444px;
+  line-height: 32px;
+}
+.home .under img {
+  width: 274px;
+  height: 274px;
+  position: relative;
+  left: 550px;
+  top: 350px;
+}
+.home:nth-child(3) {
+  background-image: url(../img/b2.png);
+}
+.home:nth-child(3) .pick {
+  width: 400px;
+  position: relative;
+  top: 130px;
+  left: 180px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.home:nth-child(3) .pick span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+.home:nth-child(3) .img2 {
+  width: 415px;
+  height: 415px;
+  position: relative;
+  top: 150px;
+  left: 200px;
+}
+.home:nth-child(3) .h2 {
+  width: 400px;
+  position: relative;
+  left: 800px;
+  top: -200px;
+}
+.home:nth-child(3) .h2 .mn {
+  width: 400px;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.home:nth-child(3) .h2 .see {
+  width: 444px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+.home:nth-child(4) {
+  background-image: url(../img/B3.png);
+}
+.home:nth-child(4) .boxx1 {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home:nth-child(4) .boxx1 .tex .met {
+  position: relative;
+  top: 130px;
+  left: 180px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.home:nth-child(4) .boxx1 .tex .met span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+.home:nth-child(4) .boxx1 .tex .com {
+  position: relative;
+  left: 180px;
+  top: 200px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.home:nth-child(4) .boxx1 .tex .doug {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  position: relative;
+  left: 180px;
+  top: 200px;
+  margin-bottom: 27px;
+}
+.home:nth-child(4) .boxx1 .tex .doup {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+  width: 444px;
+  margin: 0;
+  position: relative;
+  left: 180px;
+  top: 200px;
+}
+.home:nth-child(4) .boxx1 img {
+  position: relative;
+  top: 100px;
+  left: 220px;
+  width: 568px;
+  height: 712px;
+}
+.home:nth-child(5) {
+  background-image: url(../img/B4.png);
+}
+.home:nth-child(5) .met {
+  position: relative;
+  top: 130px;
+  left: 180px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.home:nth-child(5) .met span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+.home:nth-child(5) .blocs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home:nth-child(5) .blocs .rouns {
+  position: relative;
+  top: 180px;
+  left: 180px;
+}
+.home:nth-child(5) .blocs .rouns .ro {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background: #FFFFFF;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #0B0D17;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.home:nth-child(5) .blocs .rouns .rou {
+  font-family: "Bellefair";
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border: 1px solid #FFFFFF;
+  width: 80px;
+  height: 80px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+.home:nth-child(5) .blocs .the {
+  position: relative;
+  left: 230px;
+  top: 190px;
+}
+.home:nth-child(5) .blocs .the .ter {
+  letter-spacing: 4.725px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #D0D6F9;
+  margin: 0;
+  margin-bottom: 11px;
+}
+.home:nth-child(5) .blocs .the .laun {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 17px;
+}
+.home:nth-child(5) .blocs .the .vahic {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+  width: 444px;
+}
+.home:nth-child(5) .blocs img {
+  position: relative;
+  left: 393px;
+  top: 40px;
+  width: 495px;
+  height: 507px;
+}
+
+.home.active {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

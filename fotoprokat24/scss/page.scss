@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu';
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0 9px;
+    
+ .logo{
+    display: flex;
+    align-items: center;
+    
+    .indx{
+        .fotoprokat{
+            width: 151px;
+            height: 26px;
+        }
+       }
+ }
+ .kat{
+    display: flex;
+    p{
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-right: 20px;
+    }
+ }
+ form{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    svg{
+        margin-right: 5px;
+    }
+    input{
+        padding: 10px;
+        height: 30px;
+        border-radius: 100px;
+        background: #F7F7F7;
+        border: 1px solid #E3E3E3;
+
+    }
+ }
+.voy{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 50px;
+
+}
+.icons{
+   display: flex;
+   align-items: center;
+ svg{
+    margin-right: 25px;
+   }
+}
+ 
+}
+@media (max-width: 900px ) {
+    *{
+        box-sizing: border-box;
+    }
+    .head{
+        width: 100%;
+        display: flex;
+        justify-content:space-between  ;
+        padding: 5px 10px 5px;
+        
+     .logo{
+        display: flex;
+        align-items: center;
+         margin-left: 0px;        
+         .indx{
+            .fotoprokat{
+                width: 151px;
+                height: 26px;
+            }
+           }
+    
+     }
+     .kat{
+        display: none;
+     }
+     form{
+        width: max-content;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 10px;
+        svg{
+            display: none;
+            margin-right: 5px;
+        }
+        input{
+            margin-left: 20px;
+            width: 150px;
+            padding: 5px;
+            height: 20px;
+            border-radius: 100px;
+            background: #F7F7F7;
+            border: 1px solid #E3E3E3;
+    
+        }
+     }
+    .voy{
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-right: 0px;
+    
+    }
+    .icons{
+       display: none;
+       align-items: center;
+     svg{
+        margin-right: 0x;
+       }
+    }
+     
+    }  
+}
+
+@media (max-width: 600px ) {
+    *{
+        box-sizing: border-box;
+    }
+    .head{
+        width: 100%;
+        display: flex;
+        justify-content:space-between  ;
+        padding: 5px 10px 5px;
+        
+     .logo{
+        display: flex;
+        align-items: center;
+         margin-left: 0px;        
+       .indx{
+        .fotoprokat{
+            width: 151px;
+            height: 26px;
+        }
+       }
+    
+     }
+     .kat{
+        display: none;
+     }
+     form{
+        width: max-content;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 10px;
+        svg{
+            display: none;
+            margin-right: 5px;
+        }
+        input{
+            margin-left: 20px;
+            width: 150px;
+            padding: 5px;
+            height: 20px;
+            border-radius: 100px;
+            background: #F7F7F7;
+            border: 1px solid #E3E3E3;
+    
+        }
+     }
+    .voy{
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-right: 0px;
+    
+    }
+    .icons{
+       display: none;
+       align-items: center;
+     svg{
+        margin-right: 0x;
+       }
+    }
+     
+    }  
+}
+
+
+
+@import '_canon.scss';
+@import '_fourphone.scss';
+@import '_footer.scss';

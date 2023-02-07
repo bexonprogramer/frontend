@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+body{
+    margin: 0  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header{
+    width: 1440px;  
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 81;
+    img{
+        width: 48px;
+        height: 48px;
+        margin-left: 55px;
+    }
+    .line{
+        width: 473px;
+        height: 1px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        position: relative;
+        left: 60px;
+        z-index: 1;
+    }
+    ul{
+        display: flex;
+        width: 830px;
+        height: 96px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        padding: 0 123px;
+        box-sizing: border-box;
+        li{
+            display: flex;
+            align-items: center;
+            margin-right: 50px;
+            height: 93px;
+            list-style: none;
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 2.7px;
+            color: #FFFFFF;
+            transition: .3s;
+            &:hover{
+                border-bottom: 3px solid #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.home{
+    position: absolute;
+    width: 1440px;
+    height: 680px;
+    background-image: url(../img/Bitmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    display: none;
+  .under{
+    display: flex;
+    
+    .text{
+        position: relative;
+        left: 140px;
+        top: 210px;
+
+        .so{
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            letter-spacing: 4.725px;
+            color: #D0D6F9;
+            margin-bottom: 24px;
+        }
+        .space{
+            margin-bottom: 24px;
+            margin-top: 0;
+            font-family: 'Bellefair';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 150px;
+            color: #FFFFFF;
+        }
+        .let{
+            margin-top: 0;
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #D0D6F9;
+            width: 444px;
+            line-height: 32px;
+        }
+    }
+    img{
+        width: 274px;
+        height: 274px;
+        position: relative;
+        left: 550px;
+        top: 350px;
+    }
+  }
+  &:nth-child(3){
+    background-image: url(../img/b2.png);
+    .pick{
+        width: 400px;
+        position: relative;
+        top: 130px;
+        left: 180px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    span{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    }
+    }
+    .img2{
+    width: 415px;
+    height: 415px;
+    position: relative;
+    top: 150px;
+    left: 200px;
+    }
+    .h2{ width: 400px;
+        position: relative;
+        left: 800px;
+        top: -200px;
+        .mn{
+        width: 400px;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    color: #FFFFFF;
+    margin: 0;
+        }
+        .see{
+            width: 444px;
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #D0D6F9;
+        }
+    }
+  }
+  &:nth-child(4){
+    background-image: url(../img/B3.png);
+    .boxx1{
+        overflow: hidden;
+        display: flex;
+    .tex{
+        .met{
+            position: relative;
+            top: 130px;
+            left: 180px;
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            letter-spacing: 4.725px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            span{
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                letter-spacing: 4.725px;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+                opacity: 0.25;
+            }
+        }
+        .com{
+            position: relative;
+            left: 180px;
+            top: 200px;
+            margin: 0;
+            margin-bottom: 15px;
+            font-family: 'Bellefair';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+        .doug{
+            font-family: 'Bellefair';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 56px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin: 0;
+            position: relative;
+            left: 180px;
+            top: 200px;
+            margin-bottom: 27px;
+        }
+        .doup{
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #D0D6F9;
+            width: 444px;
+            margin: 0;
+            position: relative;
+            left: 180px;
+            top: 200px;
+        }
+    }
+    img{
+        position: relative;
+        top: 100px;
+        left: 220px;
+        width: 568px;
+        height: 712px;
+    }
+    }
+  }
+  &:nth-child(5){
+    background-image: url(../img/B4.png);
+    .met{
+        position: relative;
+        top: 130px;
+        left: 180px;
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: 4.725px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        span{
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 4.725px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+        }
+    }
+    .blocs{
+        display: flex;
+        .rouns{
+            position: relative;
+            top: 180px;
+            left: 180px;
+            .ro{
+            width: 80px;
+            height: 80px;
+            border-radius: 100px;
+            background: #FFFFFF;
+            font-family: 'Bellefair';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #0B0D17;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 32px;
+            }
+            .rou{
+                font-family: 'Bellefair';
+                mix-blend-mode: normal;
+                opacity: 0.25;
+                border: 1px solid #FFFFFF;
+                width: 80px;
+                height: 80px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                letter-spacing: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                margin-bottom: 32px;
+                color: #ffffff;
+            }
+        }
+        .the{
+            position: relative;
+            left: 230px;
+            top: 190px;
+            .ter{
+                letter-spacing: 4.725px;
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #D0D6F9;
+                margin: 0;
+                margin-bottom: 11px;
+            }
+            .laun{
+                font-family: 'Bellefair';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 56px;
+                color: #FFFFFF;
+                margin: 0;
+                margin-bottom: 17px;
+            }
+            .vahic{
+                font-family: 'Barlow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 32px;
+                color: #D0D6F9;
+                width: 444px;
+            }
+        }
+        img{
+            position: relative;
+            left: 393px;
+            top: 40px;
+            width: 495px;
+            height: 507px;
+        }
+    }
+  }
+}
+
+.home.active{
+    display: block;
+}
+
+

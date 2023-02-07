@@ -1,0 +1,332 @@
+@media (max-width: 376px){
+    .planets{
+        width: 375px;
+        background-image: url(../assets/space.jpg);
+        margin: 0 auto;
+    
+        header{
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            h1{
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px;
+            font-family: 'Antonio';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            letter-spacing: -1.05px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            }
+             
+.ham {
+    display: flex;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 9;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:rgb(255, 255, 255);
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }  
+          
+            ul{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0;
+                left: 0px;
+                position: absolute;
+                top: -550px;
+                z-index: 9;
+                transition: .5s;
+                padding: 24px;
+                background: #070724;
+
+                
+                li{
+                    height: 100%;
+                    font-family: 'Spartan';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    letter-spacing: 1.36364px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    border-top: 0;
+                    border-bottom: 2px solid  transparent;
+                    transition: .5s;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #ffffff50;
+                    width: 327px;
+                    display: flex;
+                    align-items: center;
+
+                    .color{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100%;
+                        background-color: #DEF4FC;
+                        margin-right: 25px;
+                      
+                    }
+                    
+
+                        &:nth-child(2) {
+                            .color{
+                                background-color: #F7CC7F;
+                            }
+                        }
+                        &:nth-child(3) {
+                            .color{
+                                background-color: #545BFE;
+                            }
+                        }
+                        &:nth-child(4) {
+                            .color{
+                                background-color: #FF6A45;
+                            }
+                        }
+                        &:nth-child(5) {
+                            .color{
+                                background-color: #ECAD7A;
+                            }
+                        }
+                        &:nth-child(6) {
+                            .color{
+                                background-color: #FCCB6B;
+                            }
+                        }
+                        &:nth-child(7) {
+                            .color{
+                                background-color: #65F0D5;
+                            }
+                        }
+                        &:nth-child(8) {
+                            .color{
+                                background-color: #FF6A45;
+                            }
+                        }
+                        
+                    &:hover{
+                        cursor: pointer;
+                        border-top: 0;
+                        border-bottom: 1px solid  white;
+                    }
+                }
+            }
+            & .click{
+                position: absolute;
+                top: 81px;
+            }
+        }
+       
+        .longLine{
+            width: 100%;
+            height: 1px;
+            background: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.2;
+        }
+        .information{
+            main{
+                width: 100%;
+                display: block;
+                padding: 0;
+                margin: 0 auto;
+                .leftSide{
+                    padding: 80px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 0px;
+                    margin-bottom: 30px;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        object-fit: cover;
+                    }
+                }
+                .rightSide{
+                    display: block;
+                    width: 100%;
+                   .blok{
+                    display: block;
+                    padding: 0px;
+                    margin-bottom: 20px;
+                   .nn{
+                    margin-left: 0px;
+                    h2{
+                        width: 100%;
+                        text-align: center;
+                        font-family: 'Antonio';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 40px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        width: 339px;
+                        margin: 0 auto;
+                        text-align: center;
+                        font-family: 'Spartan';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                        margin-bottom: 32px;
+                    }
+                    .shape{
+                        text-align: center;
+                        font-family: 'Spartan';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #FFFFFF;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                        cursor: pointer;
+                        margin-bottom: 39px;
+                    }
+                   }
+                   .mmm{
+                    position: relative;
+                    bottom: 610px;
+                    padding: 0 ;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 100%;
+                    mix-blend-mode: normal;
+                    opacity: 0.4;
+                    border-bottom: 1px solid #FFFFFF;
+                    .structure{
+                            border: 1px solid transparent;
+                            width: max-content;
+                            height: 100%;
+                            padding: 15px 0;
+                            font-family: 'Spartan';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 9px;
+                            letter-spacing: 1.92857px;
+                            text-transform: uppercase;
+                            transition: .3s;
+                            color: #FFFFFF;
+                            mix-blend-mode: normal;
+                            opacity: 1;
+                            border-bottom: 3px solid transparent;
+
+                            .ss{
+                                display: none;
+                            }
+                            .num{
+                                display: none;
+                                margin-right: 28px;
+                                font-family: 'Spartan';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 12px;
+                                letter-spacing: 2.57143px;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                mix-blend-mode: normal;
+                                opacity: 0.5;
+                            }
+                            &:not(:last-child){
+                                margin-bottom: 0px;
+                            }
+                            &:hover{
+                                cursor: pointer;
+                                border: 1px solid transparent;
+                                background: transparent;
+                                border-bottom: 3px solid #419EBB;
+                                color: white;
+                  
+                            }
+                        }
+                    }
+                   }
+                }
+            }
+            footer{
+                padding: 0 ;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .spaceInform{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 327px;
+                    height: 48px;
+                    mix-blend-mode: normal;
+                    padding: 9px 24px;
+                    border: 1px solid #ffffff38;
+                    margin-bottom: 8px;
+                    .time{
+                        font-family: 'Spartan';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 8px;
+                        letter-spacing: 0.727273px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                        margin-bottom: 4px;
+                    }
+                    .days{
+                        font-family: 'Antonio';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        text-align: right;
+                        letter-spacing: -0.75px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+    
+        }
+    }   
+}

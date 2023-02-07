@@ -1,0 +1,168 @@
+.pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px 135px;
+    width: 100%;
+    height: 550px;
+    background-image: url(../img/background/header.png);
+    background-size: cover;
+
+    div {
+        padding: 13px 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+        width: max-content;
+        height: 61px;
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+
+        span {
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: uppercase;
+            background: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        &:nth-child(2) {
+            width: max-content;
+        }
+
+        &:nth-child(3) {
+            position: relative;
+            width: max-content;
+            z-index: 1;
+        }
+    }
+
+    .round {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+        border-radius: 10000px;
+        left: 105px;
+        right: 1215px;
+        top: 534px;
+        bottom: 120px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 32px 30px;
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/phone/peop.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        div {
+            padding: 10px 15px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+            height: 42px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #000000;
+            text-transform: uppercase;
+
+            span {
+                font-weight: 700;
+                font-size: 16px;
+                color: #000000;
+                text-transform: uppercase;
+            }
+
+            &:nth-child(2) {
+                width: max-content;
+
+            }
+
+            &:nth-child(3) {
+                position: relative;
+                width: max-content;
+                z-index: 1;
+            }
+        }
+
+        .round {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+            border-radius: 100px;
+            left: 10px;
+            top: 600px;
+        }
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 32px 30px;
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/phone/peop.png);
+        background-position: center center ;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        div {
+            padding: 10px 15px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+            height: 42px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #000000;
+            text-transform: uppercase;
+
+            span {
+                font-weight: 700;
+                font-size: 16px;
+                color: #000000;
+                text-transform: uppercase;
+            }
+
+            &:nth-child(2) {
+                width: max-content;
+
+            }
+
+            &:nth-child(3) {
+                position: relative;
+                width: max-content;
+                z-index: 1;
+            }
+        }
+
+        .round {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+            border-radius: 100px;
+            left: 10px;
+            top: 600px;
+        }
+
+    }
+
+}

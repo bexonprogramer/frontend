@@ -1,0 +1,21 @@
+.white{
+    background-color:rgba(248, 239, 186,1.0) ;
+    
+}
+.green{
+    background-color: rgba(106, 176, 76,1.0);
+}
+.block{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+.longback{
+    width: 1229px; 
+    height: 154px;  
+} 
+.border{
+    background-color: #f0932b;
+    display: inline-block;
+    border: 15px solid #f0932b;
+}

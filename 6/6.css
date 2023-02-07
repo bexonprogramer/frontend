@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-color: #0D192C;
+}
+.wrapper{
+ width: 350px;
+ height: 596px;
+ background-color:#15263F ;
+ border-radius: 15px; 
+}
+.wrapper img{
+    margin: 24px ;
+}
+.wrapper .sign1{
+    
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    
+}
+.wrapper .sign2{
+    height: 52px;
+    width: 302px;
+    left: 24px;
+    top: 394px;
+ color:  #8BACD9 ;
+ margin-left: 24px;
+ margin-right: 24px;
+ margin-bottom: 34px;
+ font-family: Outfit;
+ font-size: 18px;
+ font-weight: 300;
+ line-height: 26px;
+ letter-spacing: 0px;
+ text-align: left;
+ 
+}
+.wrapper .parent1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px;
+    width: 90%;
+    margin-bottom: -10px;
+}
+.wrapper .parent1 .chil1{
+ font-size: 16px;
+ display: flex;
+ align-items: center;
+
+font-family: Outfit;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+color:#00FFF8
+
+}
+.wrapper .parent1 .chil2{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+font-family: Outfit;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+color:#8BACD9;
+
+}
+.wrapper .parent1 img{
+    margin-right: 10 px;
+}
+hr{
+    margin: 24px;
+    margin-bottom: 22px;
+    color: #2E405A;
+    
+}
+.wrapper .parent{
+    display: flex;
+}
+.wrapper .parent .cc{
+    margin-top: -20px;
+
+}
+.wrapper .parent .aa{
+    margin-left: 16px;
+    margin-top: 12px;
+    font-size: 16px;
+font-family: Outfit;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+color: #8BACD9;
+
+}
+.wrapper .parent .bb{
+    margin-left: 5px;
+    margin-top: 12px;
+    font-size: 16px;
+font-family: Outfit;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+color: #FFFFFF;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.header{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ height: 89px;
+}
+.header .wrapper{
+    display: FLEX;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    border-bottom: 1px solid black;
+}
+.header .wrapper .box{
+    font-family: roboto;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#828282
+}
+.header .wrapper .child1{
+ color:black
+}
+.header2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+}
+.header2 .wrapper2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+.header2 .wrapper2 .childa{
+    font-family: roboto;
+    font-size: 47px;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 40px;
+}
+.header2 .wrapper2 .childb{
+    font-family: roboto;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 95px;
+}
+.header2 .wrapper2  .childc{
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+transform: rotate(-90deg);
+margin-top: 70px;
+}
+.photo{
+    width: 943.61px;
+    height: 387px;
+    background-color: yellowgreen;
+}
+
+

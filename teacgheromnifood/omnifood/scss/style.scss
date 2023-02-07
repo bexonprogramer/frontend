@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #212121;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 48px;
+    width: 100%;
+    background-color: #FDF2E9;
+
+    nav {
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 46px;
+                }
+
+                &:last-child {
+                    padding: 12px 24px;
+                    background: #E67E22;
+                    border-radius: 9px;
+                    cursor: pointer;
+                    border: 2px solid transparent;
+
+                    &:hover {
+                        background-color: transparent;
+                        border: 2px solid #E67E22;
+                    }
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        color: #E67E22;
+                    }
+                }
+
+                a {
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #333;
+                    text-decoration: none;
+                    transition: .3s;
+                }
+            }
+
+        }
+    }
+}
+
+main {
+    .promo {
+        display: flex;
+        justify-content: center;
+        padding: 48px 70px 96px;
+        width: 100%;
+        background-color: #FDF2E9;
+
+        &__info {
+            max-width: 584px;
+            margin-right: 145px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 52px;
+                line-height: 55px;
+                color: #333333;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                color: #555555;
+                margin-bottom: 48px;
+            }
+
+            .promo__btns {
+                display: flex;
+                margin-bottom: 100px;
+
+                a {
+                    display: block;
+                    padding: 16px 32px;
+                    border-radius: 9px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: #555555;
+                    text-decoration: none;
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+
+                    &:first-child {
+                        background-color: #E67E22;
+                        margin-right: 16px;
+                        color: white;
+                    }
+
+                    &:last-child {
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            .promo__customers {
+                display: flex;
+                align-items: center;
+
+                .customers__list {
+                    margin-right: 16px;
+
+                    img:not(:first-child) {
+                        margin-left: -20px;
+                    }
+                }
+
+                .customers__count {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #555555;
+
+                    span {
+                        color: #E67E22;
+                    }
+                }
+            }
+        }
+
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

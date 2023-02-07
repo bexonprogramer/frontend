@@ -1,0 +1,1018 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.planets {
+  width: 1440px;
+  height: 1024px;
+  background-image: url(../assets/space.jpg);
+  margin: 0 auto;
+}
+.planets header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.planets header h1 {
+  padding: 22px 32px;
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.planets header .ham {
+  display: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.planets header .hamRotate.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.planets header .hamRotate180.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.planets header .line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.planets header .ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.planets header .ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.planets header .ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.planets header .ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+.planets header label {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70px;
+  cursor: pointer;
+}
+.planets header label span {
+  background: #fff;
+  border-radius: 10px;
+  height: 7px;
+  margin: 7px 0;
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.planets header span:nth-of-type(1) {
+  width: 50%;
+}
+.planets header span:nth-of-type(2) {
+  width: 100%;
+}
+.planets header span:nth-of-type(3) {
+  width: 75%;
+}
+.planets header input[type=checkbox] {
+  display: none;
+}
+.planets header input[type=checkbox]:checked ~ span:nth-of-type(1) {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotatez(45deg) translate(8px, 0px);
+          transform: rotatez(45deg) translate(8px, 0px);
+}
+.planets header input[type=checkbox]:checked ~ span:nth-of-type(2) {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: rotatez(-45deg);
+          transform: rotatez(-45deg);
+}
+.planets header input[type=checkbox]:checked ~ span:nth-of-type(3) {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 50%;
+  -webkit-transform: translate(30px, -11px) rotatez(45deg);
+          transform: translate(30px, -11px) rotatez(45deg);
+}
+.planets header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.planets header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 0px;
+  height: 100%;
+  font-family: "Spartan";
+  list-style: none;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-right: 33px;
+  border-top: 4px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.planets header ul li:hover {
+  cursor: pointer;
+  border-top: 4px solid #419EBB;
+}
+.planets .longLine {
+  width: 100%;
+  height: 1px;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+.planets .information main {
+  padding: 120px 0 87px;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+.planets .information main .leftSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+.planets .information main .leftSide img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.planets .information main .rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+.planets .information main .rightSide .blok h2 {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+.planets .information main .rightSide .blok p {
+  width: 350px;
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.planets .information main .rightSide .blok .shape {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  cursor: pointer;
+  margin-bottom: 39px;
+}
+.planets .information main .rightSide .blok .structure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  mix-blend-mode: normal;
+  border: 1px solid #FFFFFF;
+  width: 350px;
+  padding: 12px 28px;
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2.57143px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.planets .information main .rightSide .blok .structure .num {
+  margin-right: 28px;
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2.57143px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.planets .information main .rightSide .blok .structure:not(:last-child) {
+  margin-bottom: 16px;
+}
+.planets .information main .rightSide .blok .structure:hover {
+  cursor: pointer;
+  border: 1px solid #419EBB;
+  background: #419EBB;
+}
+.planets .information footer {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+.planets .information footer .spaceInform {
+  width: 255px;
+  height: 128px;
+  mix-blend-mode: normal;
+  padding: 20px 23px;
+  border: 1px solid rgba(255, 255, 255, 0.2196078431);
+}
+.planets .information footer .spaceInform .time {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 4px;
+}
+.planets .information footer .spaceInform .days {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.planets .bur {
+  display: none;
+  width: 24px;
+  height: 17px;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .planets {
+    width: 768px;
+    height: 1024px;
+    background-image: url(../assets/space.jpg);
+    margin: 0 auto;
+  }
+  .planets header {
+    width: 100%;
+    display: block;
+  }
+  .planets header h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 22px;
+    font-family: "Antonio";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1.05px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .planets header .ham {
+    display: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .planets header .hamRotate.active {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .planets header .hamRotate180.active {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .planets header .line {
+    fill: none;
+    -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+  .planets header .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .planets header .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .planets header .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .planets header .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+  .planets header label {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70px;
+    cursor: pointer;
+  }
+  .planets header label span {
+    background: #fff;
+    border-radius: 10px;
+    height: 7px;
+    margin: 7px 0;
+    -webkit-transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  .planets header span:nth-of-type(1) {
+    width: 50%;
+  }
+  .planets header span:nth-of-type(2) {
+    width: 100%;
+  }
+  .planets header span:nth-of-type(3) {
+    width: 75%;
+  }
+  .planets header input[type=checkbox] {
+    display: none;
+  }
+  .planets header input[type=checkbox]:checked ~ span:nth-of-type(1) {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotatez(45deg) translate(8px, 0px);
+            transform: rotatez(45deg) translate(8px, 0px);
+  }
+  .planets header input[type=checkbox]:checked ~ span:nth-of-type(2) {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: rotatez(-45deg);
+            transform: rotatez(-45deg);
+  }
+  .planets header input[type=checkbox]:checked ~ span:nth-of-type(3) {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    width: 50%;
+    -webkit-transform: translate(30px, -11px) rotatez(45deg);
+            transform: translate(30px, -11px) rotatez(45deg);
+  }
+  .planets header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 20px;
+  }
+  .planets header ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 22px 0px;
+    height: 100%;
+    font-family: "Spartan";
+    list-style: none;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-right: 33px;
+    border-top: 4px solid transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .planets header ul li:last-child {
+    margin-right: 0;
+  }
+  .planets header ul li:hover {
+    cursor: pointer;
+    border-top: 4px solid #419EBB;
+  }
+  .planets .longLine {
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+  }
+  .planets .information main {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .planets .information main .leftSide {
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .planets .information main .leftSide img {
+    width: 300px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .planets .information main .rightSide {
+    display: block;
+    width: 100%;
+  }
+  .planets .information main .rightSide .blok {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .planets .information main .rightSide .blok .nn {
+    margin-left: 30px;
+  }
+  .planets .information main .rightSide .blok .nn h2 {
+    font-family: "Antonio";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+  }
+  .planets .information main .rightSide .blok .nn p {
+    width: 339px;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .planets .information main .rightSide .blok .nn .shape {
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-bottom: 39px;
+  }
+  .planets .information main .rightSide .blok .mmm {
+    padding: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+  }
+  .planets .information main .rightSide .blok .mmm .structure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    mix-blend-mode: normal;
+    border: 1px solid #FFFFFF;
+    width: 280px;
+    padding: 12px 28px;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 1.92857px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .planets .information main .rightSide .blok .mmm .structure .num {
+    margin-right: 28px;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .planets .information main .rightSide .blok .mmm .structure:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .planets .information main .rightSide .blok .mmm .structure:hover {
+    cursor: pointer;
+    border: 1px solid #419EBB;
+    background: #419EBB;
+  }
+  .planets .information footer {
+    padding: 0 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+  }
+  .planets .information footer .spaceInform {
+    width: 164px;
+    height: 88px;
+    mix-blend-mode: normal;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2196078431);
+  }
+  .planets .information footer .spaceInform .time {
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 0.727273px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 4px;
+  }
+  .planets .information footer .spaceInform .days {
+    font-family: "Antonio";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.9px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .bur {
+    display: none;
+    width: 24px;
+    height: 17px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .planets {
+    width: 375px;
+    background-image: url(../assets/space.jpg);
+    margin: 0 auto;
+  }
+  .planets header {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .planets header h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px;
+    font-family: "Antonio";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: -1.05px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .planets header .ham {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 9;
+  }
+  .planets header .hamRotate.active {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .planets header .hamRotate180.active {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .planets header .line {
+    fill: none;
+    -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+  .planets header .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .planets header .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .planets header .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .planets header .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+  .planets header ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+    left: 0px;
+    position: absolute;
+    top: -550px;
+    z-index: 9;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 24px;
+    background: #070724;
+  }
+  .planets header ul li {
+    height: 100%;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1.36364px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-top: 0;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3137254902);
+    width: 327px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .planets header ul li .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #DEF4FC;
+    margin-right: 25px;
+  }
+  .planets header ul li:nth-child(2) .color {
+    background-color: #F7CC7F;
+  }
+  .planets header ul li:nth-child(3) .color {
+    background-color: #545BFE;
+  }
+  .planets header ul li:nth-child(4) .color {
+    background-color: #FF6A45;
+  }
+  .planets header ul li:nth-child(5) .color {
+    background-color: #ECAD7A;
+  }
+  .planets header ul li:nth-child(6) .color {
+    background-color: #FCCB6B;
+  }
+  .planets header ul li:nth-child(7) .color {
+    background-color: #65F0D5;
+  }
+  .planets header ul li:nth-child(8) .color {
+    background-color: #FF6A45;
+  }
+  .planets header ul li:hover {
+    cursor: pointer;
+    border-top: 0;
+    border-bottom: 1px solid white;
+  }
+  .planets header .click {
+    position: absolute;
+    top: 81px;
+  }
+  .planets .longLine {
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+  }
+  .planets .information main {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .planets .information main .leftSide {
+    padding: 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .planets .information main .leftSide img {
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .planets .information main .rightSide {
+    display: block;
+    width: 100%;
+  }
+  .planets .information main .rightSide .blok {
+    display: block;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .planets .information main .rightSide .blok .nn {
+    margin-left: 0px;
+  }
+  .planets .information main .rightSide .blok .nn h2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Antonio";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  .planets .information main .rightSide .blok .nn p {
+    width: 339px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+  }
+  .planets .information main .rightSide .blok .nn .shape {
+    text-align: center;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-bottom: 39px;
+  }
+  .planets .information main .rightSide .blok .mmm {
+    position: relative;
+    bottom: 610px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  .planets .information main .rightSide .blok .mmm .structure {
+    border: 1px solid transparent;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 100%;
+    padding: 15px 0;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 1.92857px;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 1;
+    border-bottom: 3px solid transparent;
+  }
+  .planets .information main .rightSide .blok .mmm .structure .ss {
+    display: none;
+  }
+  .planets .information main .rightSide .blok .mmm .structure .num {
+    display: none;
+    margin-right: 28px;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .planets .information main .rightSide .blok .mmm .structure:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .planets .information main .rightSide .blok .mmm .structure:hover {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    border-bottom: 3px solid #419EBB;
+    color: white;
+  }
+  .planets .information footer {
+    padding: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .planets .information footer .spaceInform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 327px;
+    height: 48px;
+    mix-blend-mode: normal;
+    padding: 9px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2196078431);
+    margin-bottom: 8px;
+  }
+  .planets .information footer .spaceInform .time {
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 0.727273px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 4px;
+  }
+  .planets .information footer .spaceInform .days {
+    font-family: "Antonio";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: -0.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}/*# sourceMappingURL=style.css.map */

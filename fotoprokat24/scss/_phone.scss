@@ -1,0 +1,372 @@
+.phone{
+    display: flex;
+    align-items: center;
+    margin-bottom: 93px;
+    .bot1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 130px;
+     width: 40px;
+     height: 40px;
+     background: #FFFFFF;
+     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .corner{
+        display: flex;
+        justify-content: space-between;
+        .price{
+            width: 350px;
+            height: 410px;
+            background: #FFFFFF;
+            border: 1px solid #EFEFEF;
+            .phone1{
+                display: flex;
+                margin-bottom: 32px;
+                img{
+                    margin-left: 75px;
+                    margin-top: 26px;
+                    width: 200px;
+                    height: 141px;
+                }
+              div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 30px;
+                svg{
+                    margin-top: 21px;
+                    &:last-child{
+                        margin-top: 17px;
+                    }
+                }
+              }
+    
+            }
+            h2{
+                font-weight: 700;
+                font-size: 16px;
+                text-align: center;
+                color: #000000;
+                margin-bottom: 5px;
+             }
+             p{
+                width: 350px;
+                margin-top: 0;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                color: #75758A;
+            }
+            .canonprices{
+                display: flex;  
+                .prc1{
+                    width: 87px;
+                    height: 70px;
+                    padding: 17px 9px;
+                    background: #FFFFFF;
+                    border: 1px solid #EFEFEF;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #75758A;
+                    span{
+                        font-weight: 700;
+                        color :#000000;
+                    }
+                }
+            }
+            .btn{
+                display: flex;
+                justify-content: space-between;
+                padding: 21px 25px;
+             .bn{
+                padding: 12px 0;
+                text-align: center;
+                width: 140px;
+                height: 40px;
+                background: #FFFFFF;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+                border-radius: 100px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #000000;
+                &:last-child{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                width: 16px;
+                height: 16px;
+                margin-right: 9px;
+                }
+                color: #FFFFFF;
+                background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+                border-radius: 100px;
+                }
+             }
+            }
+        }
+    }
+    .bot2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 130px;
+         width: 40px;
+         height: 40px;
+         background: #FFFFFF;
+         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+        
+    }
+
+}
+
+@media (max-width: 900px ){
+    *{
+        box-sizing: border-box;
+    }
+    .phone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 46px;
+        .bot1{
+        display: none;
+        }
+        .corner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .price{
+                width: 100%;
+                height: 410px;
+                background: #FFFFFF;
+                border: 1px solid #EFEFEF;
+                margin-bottom: 10px;
+                .phone1{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 32px;
+                    padding: 0 20px;
+                    img{
+                        margin-left: 0px;
+                        margin-top: 26px;
+                        width: 200px;
+                        height: 141px;
+                    }
+                  div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 0;
+                    padding: 0px 30px;
+                    svg{
+                        margin-top: 21px;
+                        &:last-child{
+                            margin-top: 17px;
+                        }
+                    }
+                  }
+        
+                }
+                h2{
+                    font-weight: 700;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #000000;
+                    margin-bottom: 5px;
+                 }
+                 p{
+                    width: 100%;
+                    margin-top: 0;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #75758A;
+                }
+                .canonprices{
+                    justify-content: space-between;
+                    display: flex;  
+                    .prc1{
+                        width: max-content;
+                        padding: 17px 9px;
+                        background: #FFFFFF;
+                        border: 1px solid #EFEFEF;
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-align: center;
+                        color: #75758A;
+                        span{
+                            font-weight: 700;
+                            color :#000000;
+                        }
+                    }
+                }
+                .btn{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 21px 25px;
+                 .bn{
+                    padding: 12px 0;
+                    text-align: center;
+                    width: 140px;
+                    height: 40px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+                    border-radius: 100px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #000000;
+                    &:last-child{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 9px;
+                    }
+                    color: #FFFFFF;
+                    background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+                    border-radius: 100px;
+                    }
+                 }
+                }
+            }
+        }
+        .bot2{
+            display: none;
+        }
+    
+    }
+
+}
+
+@media (max-width: 600px ){
+    *{
+        box-sizing: border-box;
+    }
+    .phone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 46px;
+        .bot1{
+        display: none;
+        }
+        .corner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .price{
+                width: 100%;
+                height: 410px;
+                background: #FFFFFF;
+                border: 1px solid #EFEFEF;
+                margin-bottom: 10px;
+                .phone1{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 32px;
+                    padding: 0 20px;
+                    img{
+                        margin-left: 0px;
+                        margin-top: 26px;
+                        width: 200px;
+                        height: 141px;
+                    }
+                  div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 0;
+                    padding: 0px 30px;
+                    svg{
+                        margin-top: 21px;
+                        &:last-child{
+                            margin-top: 17px;
+                        }
+                    }
+                  }
+        
+                }
+                h2{
+                    font-weight: 700;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #000000;
+                    margin-bottom: 5px;
+                 }
+                 p{
+                    width: 100%;
+                    margin-top: 0;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #75758A;
+                }
+                .canonprices{
+                    justify-content: space-between;
+                    display: flex;  
+                    .prc1{
+                        width: max-content;
+                        padding: 17px 9px;
+                        background: #FFFFFF;
+                        border: 1px solid #EFEFEF;
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-align: center;
+                        color: #75758A;
+                        span{
+                            font-weight: 700;
+                            color :#000000;
+                        }
+                    }
+                }
+                .btn{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 21px 25px;
+                 .bn{
+                    padding: 12px 0;
+                    text-align: center;
+                    width: 140px;
+                    height: 40px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+                    border-radius: 100px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #000000;
+                    &:last-child{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 9px;
+                    }
+                    color: #FFFFFF;
+                    background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+                    border-radius: 100px;
+                    }
+                 }
+                }
+            }
+        }
+        .bot2{
+            display: none;
+        }
+    
+    }
+
+}

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    margin-bottom: 200px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+.studio {
+    padding: 24px 0;
+    .menunav {
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 145px;
+            height: 31px;
+        }
+        .stud {
+            display: flex;
+            align-items: center;
+            .three {
+                margin-right: 305px;
+
+                a {
+                    font-weight: 500;
+                    font-size: 14px;
+                    letter-spacing: 0.02em;
+                    color: #212121;
+                    text-decoration: none;
+                    transition: .3s;
+                    &:hover{
+                        color:#2196F3;
+                        cursor: pointer;
+                    }
+                    &:not(:last-child) {
+                        margin-right: 50px;
+                    }
+                }
+            }
+            .a {
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0.02em;
+                color: #757575;
+                text-decoration: none;
+                transition: .3s;
+                &:not(:last-child) {
+                    margin-right: 31px;
+                }
+                svg {
+                    margin-right: 10px;
+                    path{
+                        transition: .3s;
+                        &:hover{
+                            fill:#2196F3 ;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &:hover{
+                    transform: scale(1.03);
+                    color:#2196F3;
+                    cursor: pointer;
+                }
+
+            }
+
+        }
+    }
+}
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/pic/Img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 94px;
+
+    h1 {
+        width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        border: 0;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+    }
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 94px;
+    div {
+        img {
+            width: 270px;
+            height: 120px;
+            margin-bottom: 30px;
+        }
+        h4 {
+            margin-top: 0;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #212121;
+            margin-bottom: 10px;
+        }
+        p {
+            width: 270px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: #757575;
+        }
+    }
+}
+.h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+.img2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 94px;
+    .chil1 {
+        display: flex;
+        align-items: flex-end;
+        width: 370px;
+        height: 294px;
+        background-image: url(../img/pic/klava.png);
+        .desk {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 370px;
+            height: 70px;
+            background-color: #2F303ACC;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            transition: .3s;
+
+            &:hover {
+                color: blue;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .chil2 {
+        display: flex;
+        align-items: flex-end;
+        width: 370px;
+        height: 294px;
+        background-image: url(../img/pic/phone.png);
+
+        .desk {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 370px;
+            height: 70px;
+            background-color: #2F303ACC;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            transition: .3s;
+
+            &:hover {
+                color: blue;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .chil3 {
+        display: flex;
+        align-items: flex-end;
+        width: 370px;
+        height: 294px;
+        background-image: url(../img/pic/color.png);
+
+        .desk {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 370px;
+            height: 70px;
+            background-color: #2F303ACC;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            transition: .3s;
+
+            &:hover {
+                color: blue;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.comand {
+    background-color: #F5F4FA;
+    padding-top: 50px;
+    padding-bottom: 94px;
+    margin-bottom: 94px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-bottom: 50px;
+    }
+    .person {
+        display: flex;
+        justify-content: space-between;
+        .per1 {
+            width: 270px;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+            img {
+                width: 270px;
+                height: 260px;
+            }
+            .h4 {
+                font-weight: 500;
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: #212121;
+                margin-bottom: 10px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: #757575;
+                margin-bottom: 16px;
+            }
+            .icons {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 44px;
+                margin-bottom: 42px;
+            }
+        }
+    }
+}
+.client{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 94px;
+    .svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+    }
+}
+footer{
+    padding: 60px 0;
+    background-color: #2F303A;
+    .studio1 {
+    
+        .menunav {
+            display: flex;
+            align-items: center;
+            img {
+                width: 145px;
+                height: 31px;
+            }
+            a{
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-decoration: none;
+                &{
+                    margin-left: 150px;
+                }
+            }
+           
+        }
+    }
+
+}

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #212121;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	font-family: "Poppins", sans-serif;
+	color: white;
+}
+.wrapper {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+main form {
+	width: 100%;
+	display: flex;
+	column-gap: 50px;
+}
+
+input[type="text"] {
+	height: 48px;
+	font-size: 18px;
+	padding: 5px 15px;
+	color: white;
+	font-family: "Poppins", sans-serif;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid gray;
+	outline: 0;
+	flex-grow: 1;
+}
+
+input[type="text"].error {
+	animation: inpSnip 0.1s ease;
+}
+
+button {
+	width: 150px;
+	padding: 0px 15px;
+	height: 48px;
+	font-size: 24px;
+	color: white;
+	border: 0;
+	border-radius: 5px;
+	background-color: rgb(0, 149, 255);
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.todolist {
+	width: 100%;
+}
+
+.todo-item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+	padding: 5px 0px;
+	font-size: 28px;
+}
+
+.todo-item__txt {
+	flex-grow: 1;
+}
+
+input[type="checkbox"] {
+	width: 25px;
+	height: 25px;
+}
+
+input[type="checkbox"]:checked ~ .todo-item__txt {
+	text-decoration: line-through;
+}
+
+.todo-item__del {
+	font-size: 48px;
+	cursor: pointer;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .todo__clear {
+	background-color: transparent;
+	padding: 0;
+	font-size: 16px;
+	cursor: pointer;
+	text-transform: none;
+}
+
+@keyframes inpSnip {
+	0% {
+		transform: translateX(0);
+	}
+	33.3% {
+		transform: translateX(25px);
+	}
+	66.6% {
+		transform: translateX(-25px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

@@ -1,0 +1,326 @@
+.map{
+    width: 100%;
+    height: 383px;
+    background-image: url(../img/background/formap.png);
+    background-size: cover;
+    padding: 96px 0;
+    .maph1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .map_c{
+        display: flex;
+        justify-content: space-between;
+        
+        .mapchild{
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+            padding: 25px 30px;
+            width: 255px;
+            .svgmap{
+                display: flex;
+                font-weight: 700;
+                font-size: 16px;
+                color: #000000;
+                margin-top: 0;
+                margin-bottom: 18px;
+                .camer{
+                    margin-right: 10px;
+                }
+            }
+              .under2{
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-weight: 400;
+                font-size: 14px;
+                color: #75758A;
+
+               }
+            .htt{
+                font-weight: 400;
+                font-size: 14px;
+                text-decoration-line: underline;
+                color: #60B021;
+            }
+        }
+    }
+}
+.mapunder{
+    width: 100%;
+    background: #515668;
+    .email{
+        display: flex;
+        align-items: center;
+        padding: 16px 0;
+       .emailchild{
+        display: flex;
+        margin-right: 85px;
+        .emil{
+            margin-right: 10px; 
+        }
+        .pod{
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #8EE901;
+            span{
+                color: white;
+            }
+        }
+       }
+       .for{
+         margin-right: 95px;
+           form{
+            display: flex;
+            align-items: center;
+            .inp{
+                padding: 12px 20px;
+                width: 315px;
+                background: #FFFFFF;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+                border: 0;
+                margin-right: 0;
+            }
+            .lab{
+                margin-left: 0;
+                width: 160px;
+                padding: 12px 20px;
+                background: #4F9C2C;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+
+            }
+        }
+       }
+       .call{
+        display: flex;
+        .ring{
+            margin-right: 10px;
+
+        }
+        .zakaz{ 
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 16px;
+            color: #8EE901;
+            text-decoration: none;
+        }
+       }
+
+    }
+
+}
+@media (max-width: 900px ){
+    .map{
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/background/formap.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px 0;
+        .maph1{
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        .map_c{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+            .mapchild{
+                background: #FFFFFF;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+                padding: 15px 20px;
+                width: 100%;
+                border: 1px solid #FFFFFF;
+                margin-bottom: 10px;
+                .svgmap{
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #000000;
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    .camer{
+                        margin-right: 10px;
+                    }
+                }
+                  .under2{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #75758A;
+    
+                   }
+                .htt{
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 400;
+                    font-size: 18px;
+                    text-decoration-line: underline;
+                    color: #60B021;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+  
+}
+
+@media (max-width: 600px ){
+    .map{
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/background/formap.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px 0;
+        .maph1{
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        .map_c{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+            .mapchild{
+                background: #FFFFFF;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+                padding: 15px 20px;
+                width: 100%;
+                border: 1px solid #FFFFFF;
+                margin-bottom: 10px;
+                .svgmap{
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #000000;
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    .camer{
+                        margin-right: 10px;
+                    }
+                }
+                  .under2{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #75758A;
+    
+                   }
+                .htt{
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 400;
+                    font-size: 18px;
+                    text-decoration-line: underline;
+                    color: #60B021;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .mapunder{
+        width: 100%;
+        background: #515668;
+        .email{
+            display: flex;
+            align-items: center;
+            padding: 16px 0;
+           .emailchild{
+            display: none;
+            margin-right: 0px;
+            .emil{
+                margin-right: 10px; 
+            }
+            .pod{
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #8EE901;
+                span{
+                    color: white;
+                }
+            }
+           }
+           .for{
+             margin-right: 0px;
+               form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .inp{
+                    padding: 10px 10px;
+                    width: 100%;
+                    background: #FFFFFF;
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+                    border: 0;
+                    margin-right: 0;
+                }
+                .lab{
+                    margin-left: 0;
+                    width: max-content;
+                    padding: 10px 20px;
+                    background: #4F9C2C;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    
+                }
+            }
+           }
+           .call{
+            display: none;
+            .ring{
+                margin-right: 0px;
+    
+            }
+            .zakaz{
+                display: none; 
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 700;
+                font-size: 16px;
+                color: #8EE901;
+                text-decoration: none;
+            }
+           }
+    
+        }
+    
+    } 
+}

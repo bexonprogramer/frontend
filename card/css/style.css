@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F2EAE2;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Fraunces', serif; */
+}
+
+.card{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .card__info{
+    width: 100%;
+    padding: 32px;
+}
+
+.card .card__info .card__subtitle{
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #6C7289;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.card .card__info .card__title{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1C232B;
+    margin-bottom: 24px;
+}
+
+.card .card__info .card__descr{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #6C7289;
+    margin-bottom: 29px;
+}
+
+.card .card__info .card__price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card .card__info .card__price span{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 32px;
+    color: #3D8168;
+    margin-right: 19px;
+}
+
+.card .card__info .card__price s{
+    font-weight: 500;
+    font-size: 13px;
+    color: #6C7289;
+}
+
+.card .card__info button{
+    display: flex;
+    align-items: center;
+    padding: 15px 62px;
+    border: 0;
+    background-color: #3D8168;
+    border-radius: 8px;
+}
+
+.card .card__info button span{
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.card .card__info button img{
+    margin-right: 11px;
+}

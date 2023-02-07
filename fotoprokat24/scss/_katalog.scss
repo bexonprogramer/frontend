@@ -1,0 +1,178 @@
+h2{
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 24px;
+}
+.aa{
+margin: 0 auto;
+width: 570px;
+font-weight: 400;
+font-size: 14px;
+line-height: 26px;
+text-align: center;
+color: #75758A;
+margin-bottom: 17px;
+margin-top: 0;
+}
+.katalogbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 570px;
+    margin: 0 auto  ;
+    margin-bottom: 80px;
+.btnk{
+    padding: 17px 54px;
+    width: 260px;
+    height: 50px;
+    background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+form{
+    input{
+        padding: 12px 0 12px 20px;
+        width: 260px;
+        height: 50px;
+        background: #F5F5F5;
+        border: 4px solid #F5F5F5;
+        box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 100px;
+    }
+}
+a{
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+}
+
+
+
+@media (max-width: 900px ){
+    h2{
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 14px;
+        }
+        .aa{
+        margin: 0 auto;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        padding: 0 20px;
+        text-align: center;
+        color: #75758A;
+        margin-bottom: 17px;
+        margin-top: 0;
+        }
+        .katalogbtn{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 40px;
+        .btnk{
+            padding: 17px 54px;
+            width: max-content;
+            height: 50px;
+            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 17px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        form{
+            input{ 
+                padding: 12px 0 12px 20px;
+                width: 260px;
+                height: 50px;
+                background: #F5F5F5;
+                border: 4px solid #F5F5F5;
+                box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+                border-radius: 100px;
+            }
+        }
+        a{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        }
+         
+}
+
+@media (max-width: 600px ){
+    h2{
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 14px;
+        }
+        .aa{
+        margin: 0 auto;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        padding: 0 20px;
+        text-align: center;
+        color: #75758A;
+        margin-bottom: 17px;
+        margin-top: 0;
+        }
+        .katalogbtn{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 40px;
+        .btnk{
+            padding: 17px 54px;
+            width: max-content;
+            height: 50px;
+            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 17px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        form{
+            input{ 
+                padding: 12px 0 12px 20px;
+                width: 260px;
+                height: 50px;
+                background: #F5F5F5;
+                border: 4px solid #F5F5F5;
+                box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+                border-radius: 100px;
+            }
+        }
+        a{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        }
+         
+}

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #212121;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 48px;
+  width: 100%;
+  background-color: #FDF2E9;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+header nav ul li:not(:last-child) {
+  margin-right: 46px;
+}
+header nav ul li:last-child {
+  padding: 12px 24px;
+  background: #E67E22;
+  border-radius: 9px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+header nav ul li:last-child:hover {
+  background-color: transparent;
+  border: 2px solid #E67E22;
+}
+header nav ul li:last-child a {
+  color: white;
+}
+header nav ul li:hover a {
+  color: #E67E22;
+}
+header nav ul li a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 48px 70px 96px;
+  width: 100%;
+  background-color: #FDF2E9;
+}
+main .promo__info {
+  max-width: 584px;
+  margin-right: 145px;
+}
+main .promo__info h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 55px;
+  color: #333333;
+  margin-bottom: 32px;
+}
+main .promo__info p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #555555;
+  margin-bottom: 48px;
+}
+main .promo__info .promo__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+main .promo__info .promo__btns a {
+  display: block;
+  padding: 16px 32px;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #555555;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+main .promo__info .promo__btns a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+main .promo__info .promo__btns a:first-child {
+  background-color: #E67E22;
+  margin-right: 16px;
+  color: white;
+}
+main .promo__info .promo__btns a:last-child {
+  background-color: #fff;
+}
+main .promo__info .promo__customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .promo__info .promo__customers .customers__list {
+  margin-right: 16px;
+}
+main .promo__info .promo__customers .customers__list img:not(:first-child) {
+  margin-left: -20px;
+}
+main .promo__info .promo__customers .customers__count {
+  font-weight: 600;
+  font-size: 18px;
+  color: #555555;
+}
+main .promo__info .promo__customers .customers__count span {
+  color: #E67E22;
+}
+main .promo__img img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

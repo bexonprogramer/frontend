@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parentSlide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1440px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.parentSlide .btns {
+  position: absolute;
+  z-index: 11;
+  top: 600px;
+  left: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  width: 112px;
+  height: 56px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+          box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+  border-radius: 28px;
+}
+.parentSlide .btns .prev {
+  width: 20px;
+  cursor: pointer;
+}
+.parentSlide .btns .next {
+  width: 20px;
+  cursor: pointer;
+}
+.parentSlide .slide1 {
+  -webkit-transition: 3s;
+  transition: 3s;
+  opacity: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1440px;
+  background-color: #F2F2F2;
+  padding: 80px;
+}
+.parentSlide .slide1 .text {
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
+}
+.parentSlide .slide1 .text .interest {
+  width: 635px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+  color: #202047;
+  margin-bottom: 32px;
+}
+.parentSlide .slide1 .text .name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #202047;
+}
+.parentSlide .slide1 .text .name span {
+  font-weight: 500;
+  font-size: 20px;
+  color: #B9B9CE;
+}
+.parentSlide .slide1 .personImiga img {
+  width: 540px;
+  height: 540px;
+}
+.parentSlide .slide1.active {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

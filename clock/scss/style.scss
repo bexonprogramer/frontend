@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 300px;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+.current{
+    width: 900px;
+    margin: 0 auto;
+
+    .blok{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        .block1{
+            h2{
+             font-size: 28px;
+             margin-bottom: 10px;
+            }
+             p{
+               font-size: 22px;
+               font-weight: 700;  
+               margin-bottom: 20px;
+             }
+             .inp1{
+                 box-sizing: border-box;
+                 width: 400px;
+                 height: 50px;
+                 border-radius: 10px;
+                 border: 1px solid grey;
+                 padding: 10px;
+                 font-size: 28px;
+     
+             }
+             .suport{
+              width: 400px;
+              color: grey;
+              font-size: 19px;
+              font-weight: normal;
+              margin-bottom: 25px;
+             }
+             button{
+
+                  cursor: pointer;
+                  width: 150px;
+                  height: 50px;
+                  border-radius: 10px;
+                  background-color: rgb(87, 87, 230);
+                  color: white;
+                  font-size: 20px;
+                  font-weight: 600;
+                  border:0;
+             }
+         }
+         .block2{
+            .seconds{
+                font-size: 58px;
+                font-weight: 500;
+                margin-top: 80px;
+                margin-bottom: 10px;
+            }
+            .date{
+                margin: 0;
+                text-align: center;
+                font-size: 16px;
+             font-weight: 900;
+             margin-bottom: 10px;
+            }
+            .clok{
+                text-align: center;
+                margin: 0;
+                font-weight: 900;
+                margin-bottom: 22px;
+            }
+            .copy{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                width: 80px;
+                height: 40px; 
+                border-radius: 10px;
+                border: 1px solid black;  
+            }
+            
+         }
+    }
+    .format{
+        display: none;
+        border: 1px solid rgb(180, 179, 179);
+        border-radius: 5px;
+        overflow: hidden;
+        border-bottom: 0;
+        margin-bottom: 30px;
+        
+        .blk1{
+            display: flex;
+            .fr{
+                font-weight: 600;
+                padding: 12px;
+                width: 30%;
+                border-bottom: 1px solid rgb(180, 179, 179);
+                background-color: rgba(235, 233, 233, 0.53);
+                border-right: 0;
+                
+            }
+            .sec{
+                width: 70%;
+                padding: 12px;
+                border-bottom: 1px solid rgb(180, 179, 179);
+                border-left: 1px solid rgb(180, 179, 179);
+
+            }
+        }
+    }
+    
+    h4{
+        margin-bottom: 15px;
+    }
+    .year{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        .miniblok{
+            .yr{
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            input{  
+                font-size: 20px;
+                width: 90px;
+                border: 1px solid rgb(180, 179, 179);
+                border-radius:4px;
+                padding: 12px;
+
+            }
+        }
+    }
+    .btn{
+        margin-bottom: 20px;
+        .but2{
+            cursor: pointer;
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(87, 87, 230);
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            border:0;
+       }
+    }
+    .unix{
+        display: none;
+        border: 1px solid rgb(180, 179, 179);
+        border-radius: 5px;
+        overflow: hidden;
+        border-bottom: 0;
+        margin-bottom: 30px;
+        .blk2{
+            display: flex;
+            .fr{
+                font-weight: 600;
+                padding: 12px;
+                width: 30%;
+                border-bottom: 1px solid rgb(180, 179, 179);
+                background-color: rgba(235, 233, 233, 0.53);
+                border-right: 0;
+                
+            }
+            .sec{
+                width: 70%;
+                padding: 12px;
+                border-bottom: 1px solid rgb(180, 179, 179);
+                border-left: 1px solid rgb(180, 179, 179);
+
+            }
+        }
+    }
+     
+    .unix.active2{
+        display: block;
+    }
+
+    .format.active{
+        display: block;
+    }
+}
+
